@@ -22,7 +22,46 @@ ul {
  padding-left: 0em
 }
 
+
+
 /* Header style */
+.dropdown_wrap {
+  display: none;
+}
+.sideMenu {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0px;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.sideMenu a {
+  padding: 10px;
+  margin-left: 6px;
+  text-decoration: none;
+  font_size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sideMenu .menu_close {
+  font-size: 18px;
+}
+.menu_open {
+  display: none;
+  background-color:  #000000;
+  color: #ffffff;
+  border: none;
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
 .header_wrap {
   margin: auto;
   background: #ffffff;
@@ -57,7 +96,6 @@ ul.contact_icons li.email a:before {
 
 .contact_wrap {
   grid-column: 1 / span 4;
-  grid-row: 1 /2;
 }
 
 .nav_bar {
@@ -124,38 +162,38 @@ a:hover {
   justify-content: center;
 }
 
-.programing_icons {
+.programming_icons {
   margin-top: 4em;
   margin-bottom: 4em;
 }
 
-.programing_icons li {
+.programming_icons li {
   display: inline;
   margin: 3.5em;
 }
 
-.programing_icons li.python a:before {
+.programming_icons li.python a:before {
   content: url(src/icons/python01.png);
 }
-.programing_icons li.java a:before {
+.programming_icons li.java a:before {
   content: url(src/icons/java02.png);
 }
-.programing_icons li.javascript a:before {
+.programming_icons li.javascript a:before {
   content: url(src/icons/javascript04.png);
 }
-.programing_icons li.html a:before {
+.programming_icons li.html a:before {
   content: url(src/icons/html502.png);
 }
-.programing_icons li.css a:before {
+.programming_icons li.css a:before {
   content: url(src/icons/css02.png);
 }
-.programing_icons li.php a:before {
+.programming_icons li.php a:before {
   content: url(src/icons/php01.png);
 }
-.programing_icons li.react a:before {
+.programming_icons li.react a:before {
   content: url(src/icons/react02.png);
 }
-.programing_icons li.wireframes a:before {
+.programming_icons li.wireframes a:before {
   content: url(src/icons/wireframes01.png);
 }
 
@@ -163,4 +201,32 @@ a:hover {
 footer {
   display: grid;
   grid-column: 2 / span 3;
+}
+
+/* responsive design */
+@media only screen and (max-width: 330px) {
+  .programming_icons li {
+	margin: 2.5em;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .nav_bar {
+	display: none;
+  }
+  
+  .menu_open {
+    display: block;
+	grid-column: 1;
+	grid-row: 1;
+  }
+  
+  .header_wrap ul {
+    margin-top: 5px;
+  }
+  
+  .contact_wrap {
+    grid-column: 1 / span 5;
+    grid-row: 1;
+	margin-right: 5px;
+  }
 }
