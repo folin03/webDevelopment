@@ -6,6 +6,7 @@
     <meta name="Martin Folke" content="Personal website" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="global2.css" />
+	<script src="index.js"></script>
   </head>
   <body>
     <nav class="header_wrap">
@@ -20,7 +21,14 @@
 		  </li>
 		</ul>
 	  </div>
-	  <div class="nav_bar">
+	  <button onclick="open_nav()" class="menu_open">&#9776;</button>
+	  <div class="sideMenu" id="sideMenuId">
+	    <a class="menu_close" href="javascript:void(0)" onclick="close_nav()">&#9776;</a>
+		<a href="index.html">In this world</a>
+		<a href="past.html">In the past</a>
+		<a href="life.html">Life philosophy</a>
+	  </div>
+	  <div class="nav_bar" id="nav_bar">
 	    <ul>
 		  <li class="index_page">
 		    <a href="index.html">In this world</a>
@@ -35,14 +43,16 @@
 	  </div>
 	</nav>
 	<div class="life_picture">
-	    <h1>citat</h1>
-	    <h3>autor</h3>
+	  <div class="quote">
+	    <h2>“Be yourself; everyone else is already taken.”</h2>
+	    <h3>-  Oscar Wilde  -</h3>
+	  </div>
 	</div>
 	<div class="container">
 	  <div class="main_text">
 	    <section class="programming_wrap">
 	      <div class="believe_text">
-		    <h2>Believes</h2>
+		    <h2>Beliefs</h2>
 		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quam metus,
 		    blandit non ipsum eget, porta iaculis diam. Curabitur sodales posuere turpis 
 		    id efficitur. Mauris sit amet massa et purus mattis hendrerit. Cras a lacus risus.
@@ -133,6 +143,7 @@
 	  </div>
 	</div>
   <footer>
+    <p>&copy 2020 Martin Folke</p>
   </footer>
   </body>
 </html>
