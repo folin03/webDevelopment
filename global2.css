@@ -74,6 +74,10 @@ ul.contact_icons li {
   display: inline;
 }
 
+ul.contact_icons li.github a:before {
+  content: url(src/icons/github.png);
+}
+
 ul.contact_icons li.linkedin a:before {
   content: url(src/icons/linkedin.png);
 }
@@ -139,26 +143,6 @@ a:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
 /*  width: 100vw; */
-  height: 40vw;
-  display: flex;
-  justify-content: center;
-}
-.past_picture {
-  background-image: url("src/pictures/past.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 40vw;
-  display: flex;
-  justify-content: center;
-}
-.life_picture {
-  background-image: url("src/pictures/life.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   height: 40vw;
   display: flex;
   justify-content: center;
