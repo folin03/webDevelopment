@@ -14,10 +14,10 @@ if(!defined('ISITSAFETORUN')) {
 	  <div class="main_text">
 		<section>
 		    <h2>2020 Afterthought Software</h2>
-		    <p>Afterthought software has given me a chance to develop further their existing 
-			mobile application. The project was written in React Native using Typescript.
-			For this project I Learned React Native especialy for this project and it was
-			successfully finished in August.</p>			
+		    <p>For Afterthought software I have been developing further their existing 
+			mobile and web applications. The mobile app is written in React Native using Typescript
+			and the web app is in Ruby on rails. I Learned React Native and Ruby on rails especialy
+			for this project.</p>			
 		</section>
 	    <section>
 		    <h2>2018 BSc Computing Science and Psychology</h2>
